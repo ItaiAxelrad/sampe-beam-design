@@ -2,10 +2,10 @@ clc
 clear all
 close all
 
-L = 23; %total length of highway overpass in inches
+L = 23; %total length of bridge in inches
 a = 9.5; if a >= L, error('a must be less than L'), end; %length from edge support to closest support in inches
 b = L - a; if L - b ~= a, error('beam is not symmetrical'), end; %length from edge support to third support in feet
-w = 750; %distributed loading on the overpass due to concrete and traffic in pounds per inch
+w = 750; %distributed loading on bridge due to dead wgt (i.e. concrete and traffic) in pounds per inch
 E_Bamboo = 29000; %Modulus of elasticity for bamboo in psi
 Y_Bamboo = 58; %Yielding strength for bamboo in psi
 FS = 1.2; %Design factor of safety
